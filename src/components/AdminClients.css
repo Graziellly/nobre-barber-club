@@ -1,0 +1,761 @@
+/* Tela de clientes - NOBRE Admin */
+/* =========================================
+   NOBRE ADMIN — CLIENTES
+========================================= */
+
+.clients-page {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 52px 58px 70px;
+
+  background: #eee9dd;
+  color: #181816;
+}
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.clients-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+
+  padding-bottom: 38px;
+
+  border-bottom: 1px solid
+    rgba(25, 25, 23, 0.15);
+}
+
+.clients-page-heading > div {
+  min-width: 0;
+}
+
+.clients-page-heading > div > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #9b7748;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+.clients-page-heading h2 {
+  margin: 0;
+
+  color: #181816;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: clamp(
+    45px,
+    5vw,
+    70px
+  );
+
+  font-weight: 500;
+  line-height: 0.9;
+
+  letter-spacing: -0.045em;
+}
+
+.clients-page-heading h2 i {
+  color: #a27d4d;
+  font-weight: 400;
+}
+
+.clients-page-heading > p {
+  width: min(100%, 310px);
+
+  margin: 0 0 5px;
+
+  color: #777168;
+
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+.clients-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  border-bottom: 1px solid
+    rgba(25, 25, 23, 0.15);
+}
+
+.clients-stats article {
+  min-width: 0;
+  min-height: 190px;
+
+  box-sizing: border-box;
+
+  padding: 27px 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-right: 1px solid
+    rgba(25, 25, 23, 0.15);
+}
+
+.clients-stats article:last-child {
+  border-right: 0;
+}
+
+.clients-stat-icon {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid
+    rgba(155, 119, 72, 0.28);
+
+  border-radius: 50%;
+
+  color: #9b7748;
+
+  font-size: 9px;
+}
+
+.clients-stats article > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #837d73;
+
+  font-size: 6px;
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+
+  line-height: 1.5;
+}
+
+.clients-stats article > strong {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #1d1c19;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.clients-stats article > small {
+  margin-top: auto;
+
+  color: #999287;
+
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+/* CARD ESCURO */
+
+.clients-stats
+  .clients-stat-dark {
+  background: #181816;
+  color: #eee9dd;
+
+  border-right: 0;
+}
+
+.clients-stats .clients-stat-dark > span {
+  color: #a78659;
+}
+
+.clients-stats .clients-stat-dark > strong {
+  color: #c39a61;
+
+  font-size: 31px;
+}
+
+.clients-stats .clients-stat-dark > small {
+  color: #817c73;
+}
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.clients-content {
+  width: 100%;
+}
+
+.clients-list-heading {
+  padding: 54px 0 22px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.clients-list-heading
+  > div:first-child
+  > span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #9b7748;
+
+  font-size: 6px;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+}
+
+.clients-list-heading h3 {
+  margin: 0;
+
+  color: #1d1c19;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* =========================================
+   BUSCA
+========================================= */
+
+.clients-search {
+  width: min(100%, 280px);
+  min-height: 43px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  border-bottom: 1px solid
+    rgba(25, 25, 23, 0.22);
+}
+
+.clients-search svg {
+  flex-shrink: 0;
+
+  color: #9b7748;
+
+  font-size: 9px;
+}
+
+.clients-search input {
+  width: 100%;
+
+  padding: 11px 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #24221e;
+
+  font-family: inherit;
+  font-size: 9px;
+}
+
+.clients-search input::placeholder {
+  color: #9a9388;
+}
+
+.clients-search:focus-within {
+  border-bottom-color: #9b7748;
+}
+
+/* =========================================
+   TABELA
+========================================= */
+
+.clients-list {
+  width: 100%;
+}
+
+.clients-table-head,
+.client-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(155px, 1.3fr)
+    minmax(130px, 1.05fr)
+    minmax(80px, 0.65fr)
+    minmax(75px, 0.6fr)
+    minmax(90px, 0.8fr)
+    minmax(125px, 1fr)
+    minmax(85px, 0.7fr);
+
+  gap: 18px;
+
+  align-items: center;
+}
+
+.clients-table-head {
+  min-height: 48px;
+
+  box-sizing: border-box;
+
+  padding: 0 14px;
+
+  border-top: 1px solid
+    rgba(25, 25, 23, 0.15);
+
+  border-bottom: 1px solid
+    rgba(25, 25, 23, 0.15);
+
+  color: #928a7e;
+
+  font-size: 6px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+.client-row {
+  min-height: 88px;
+
+  box-sizing: border-box;
+
+  padding: 14px;
+
+  border-bottom: 1px solid
+    rgba(25, 25, 23, 0.12);
+
+  transition:
+    background 0.2s ease;
+}
+
+.client-row:hover {
+  background:
+    rgba(255, 255, 255, 0.22);
+}
+
+/* =========================================
+   CLIENTE
+========================================= */
+
+.client-name {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.client-avatar {
+  width: 38px;
+  height: 38px;
+
+  flex: 0 0 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid
+    rgba(155, 119, 72, 0.32);
+
+  border-radius: 50%;
+
+  color: #9b7748;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 16px;
+}
+
+.client-name > div:last-child {
+  min-width: 0;
+}
+
+.client-name strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  overflow: hidden;
+
+  color: #27251f;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.client-name span {
+  display: block;
+
+  color: #9a9388;
+
+  font-size: 6px;
+}
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.client-contact {
+  min-width: 0;
+}
+
+.client-contact a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  max-width: 100%;
+
+  color: #706a61;
+
+  font-size: 7px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.client-contact a:hover {
+  color: #9b7748;
+}
+
+.client-contact svg {
+  flex-shrink: 0;
+
+  color: #8c704a;
+
+  font-size: 9px;
+}
+
+/* =========================================
+   DADOS
+========================================= */
+
+.client-data,
+.client-total {
+  min-width: 0;
+}
+
+.client-data strong,
+.client-total strong {
+  display: block;
+
+  color: #625d54;
+
+  font-size: 8px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+.client-total strong {
+  color: #9b7748;
+
+  font-weight: 700;
+}
+
+.client-mobile-label {
+  display: none;
+}
+
+/* =========================================
+   ESTADO VAZIO
+========================================= */
+
+.clients-empty {
+  min-height: 350px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid
+    rgba(25, 25, 23, 0.15);
+
+  text-align: center;
+}
+
+.clients-empty > svg {
+  margin-bottom: 23px;
+
+  color: #9b7748;
+
+  font-size: 20px;
+}
+
+.clients-empty > span {
+  margin-bottom: 14px;
+
+  color: #9b7748;
+
+  font-size: 6px;
+  font-weight: 700;
+
+  letter-spacing: 0.22em;
+}
+
+.clients-empty h3 {
+  margin: 0 0 19px;
+
+  color: #1d1c19;
+
+  font-family:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  font-size: 35px;
+  font-weight: 500;
+
+  line-height: 0.95;
+}
+
+.clients-empty h3 i {
+  color: #a27d4d;
+
+  font-weight: 400;
+}
+
+.clients-empty p {
+  max-width: 320px;
+
+  margin: 0;
+
+  color: #8c857a;
+
+  font-size: 8px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@container dashboard-content (max-width: 1200px) {
+  .clients-page {
+    padding:
+      45px
+      36px
+      60px;
+  }
+
+  .clients-stats {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .clients-stats article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .clients-stats article:nth-child(3),
+  .clients-stats article:nth-child(4) {
+    border-top: 1px solid
+      rgba(25, 25, 23, 0.15);
+  }
+
+  .clients-table-head {
+    display: none;
+  }
+
+  .client-row {
+    grid-template-columns:
+      minmax(170px, 1.3fr)
+      minmax(150px, 1fr)
+      0.7fr
+      0.7fr;
+
+    row-gap: 22px;
+
+    padding: 22px 12px;
+  }
+
+  .client-data,
+  .client-total {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+  .client-mobile-label {
+    display: block;
+
+    color: #a19a8e;
+
+    font-size: 5px;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@container dashboard-content (max-width: 760px) {
+  .clients-page {
+    min-height: auto;
+
+    padding:
+      30px
+      20px
+      50px;
+  }
+
+  .clients-page-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 22px;
+
+    padding-bottom: 30px;
+  }
+
+  .clients-page-heading h2 {
+    font-size: 43px;
+  }
+
+  .clients-page-heading > p {
+    width: 100%;
+  }
+
+  .clients-stats {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .clients-stats article {
+    min-height: 165px;
+
+    padding: 20px 16px;
+  }
+
+  .clients-stat-icon {
+    margin-bottom: 24px;
+  }
+
+  .clients-list-heading {
+    padding-top: 42px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 22px;
+  }
+
+  .clients-search {
+    width: 100%;
+  }
+
+  .client-row {
+    grid-template-columns: 1fr;
+
+    gap: 17px;
+
+    padding: 22px 5px;
+  }
+
+  .client-name,
+  .client-contact,
+  .client-data,
+  .client-total {
+    grid-column: 1;
+  }
+
+  .client-contact,
+  .client-data,
+  .client-total {
+    padding-left: 50px;
+  }
+
+  .client-contact {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+  }
+}
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@container dashboard-content (max-width: 430px) {
+  .clients-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .clients-page-heading h2 {
+    font-size: 37px;
+  }
+
+  .clients-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .clients-stats article {
+    min-height: 145px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid
+      rgba(25, 25, 23, 0.15);
+  }
+
+  .clients-stats article:last-child {
+    border-bottom: 0;
+  }
+}
