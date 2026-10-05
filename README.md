@@ -1,75 +1,55 @@
-# React + TypeScript + Vite
+# 💈 NOBRE Barber Club
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema web completo desenvolvido para uma barbearia, com foco em experiência do cliente, organização de agendamentos e gerenciamento administrativo.
 
-Currently, two official plugins are available:
+🌐 **Site:** https://nobre-barber-club.web.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Funcionalidades
 
-## React Compiler
+- Agendamento online de serviços
+- Seleção de barbeiro, data e horário
+- Bloqueio de horários já reservados
+- Integração com WhatsApp
+- Área administrativa protegida por autenticação
+- Gerenciamento de agendamentos
+- Controle de status dos atendimentos
+- Cadastro e histórico de clientes
+- Acompanhamento de atendimentos e receitas
+- Atualizações em tempo real com Firestore
+- Layout responsivo para celular, tablet e computador
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- Firebase Authentication
+- Cloud Firestore
+- Firebase Hosting
+- HTML5
+- CSS3
+- Git
+- GitHub
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔐 Área Administrativa
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O projeto possui um painel administrativo exclusivo para gerenciamento da barbearia.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Por segurança, as credenciais de acesso administrativo não são disponibilizadas publicamente.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🎯 Objetivo
 
-```
+O NOBRE Barber Club foi desenvolvido como um projeto completo de aplicação web para demonstrar conhecimentos em desenvolvimento Front-end, autenticação, banco de dados, regras de negócio, responsividade e publicação de aplicações.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 👩‍💻 Desenvolvedora
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Maria Grazielly**
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Estudante de Análise e Desenvolvimento de Sistemas  
+Desenvolvedora Front-end
 
-```
+GitHub: https://github.com/Graziellly
+
+---
+
+Desenvolvido com dedicação para o projeto **NOBRE Barber Club**.
